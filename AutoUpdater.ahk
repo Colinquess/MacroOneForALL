@@ -50,7 +50,6 @@ Update:
 	FileRemoveDir, %A_ScriptDir%, 1
 	FileDelete %A_ScriptDir%
 	
-	msgbox %pathing%
 	RunWait, PowerShell %PowerShell%,, Hide UseErrorLevel
 	if (ErrorLevel = 0)
 	{
