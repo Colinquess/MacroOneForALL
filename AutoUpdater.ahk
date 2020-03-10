@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 
 VersionCheck:
 
@@ -54,7 +54,9 @@ Update:
 	RunWait, PowerShell %PowerShell%,, Hide UseErrorLevel
 	if (ErrorLevel = 0)
 	{
-		;FileDelete %A_ScriptDir%\MacroOneForALL-master.zip
+		FileDelete %A_ScriptDir%\..\MacroOneForALL-master.zip
+		FileRemoveDir, %A_ScriptDir%\..\MacroOneForALL-master.zip
+		FileRemoveDir, %A_ScriptDir%\..\MacroOneForALL-master.zip, 1
 		MsgBox Script updated successfully!
 		Reload
 	} 
