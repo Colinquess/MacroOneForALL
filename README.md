@@ -1,2 +1,1 @@
-# MacroOneForALL
-A full macro for all my top aplications
+0.0.2
