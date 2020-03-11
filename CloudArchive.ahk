@@ -5,7 +5,7 @@ CloudArchive := {RemoteVersion:[CloudQNTArchives],ItsDownloadLink:[CloudQNTArchi
 CloudArchive.RemoteVersion[CloudQNTArchives] := "2"
 CloudArchive.ItsDownloadLink[CloudQNTArchives] := "https://raw.githubusercontent.com/Colinquess/MacroOneForALL/master/ArchiveVersions.ahk"
 
-CloudArchive.RemoteVersion.1 := "1"
+CloudArchive.RemoteVersion.1 := "2"
 CloudArchive.ItsDownloadLink.1 := "https://raw.githubusercontent.com/Colinquess/MacroOneForALL/master/ComplexUpdater.ahk"
 
 
