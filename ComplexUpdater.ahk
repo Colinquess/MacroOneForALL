@@ -1,5 +1,5 @@
 ﻿#NoEnv
-#Warn
+;#Warn
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 versionURL := "https://raw.githubusercontent.com/Colinquess/MacroOneForALL/master/CloudArchive.ahk"

@@ -5,8 +5,8 @@ CloudArchive := {RemoteVersion:[CloudQNTArchives],ItsDownloadLink:[CloudQNTArchi
 CloudArchive.RemoteVersion[CloudQNTArchives] := "2"
 CloudArchive.ItsDownloadLink[CloudQNTArchives] := "https://raw.githubusercontent.com/Colinquess/MacroOneForALL/master/ArchiveVersions.ahk"
 
-CloudArchive.RemoteVersion.2 := "2"
-CloudArchive.ItsDownloadLink.2 := "https://raw.githubusercontent.com/Colinquess/MacroOneForALL/master/ComplexUpdater.ahk"
+CloudArchive.RemoteVersion.1 := "1"
+CloudArchive.ItsDownloadLink.1 := "https://raw.githubusercontent.com/Colinquess/MacroOneForALL/master/ComplexUpdater.ahk"
 
 
 ;############# Add new scripts below this line, NEVER EVER above it ###########
