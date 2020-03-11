@@ -15,7 +15,7 @@ VersionCheck:
 	URLDownloadToFile %versionURL%, CurrentVersion.txt
 	
 	FileRead, RemoteVersion, CurrentVersion.txt
-	
+	RemoteVersion := RegExReplace(RemoteVersion,"`n")
 	if (ErrorLevel = 1)
 	{
 		MsgBox Failed to retrieve latest version number from %versionURL%. Please check your network connection and try again.
@@ -38,7 +38,7 @@ Update:
 	FileDelete %A_ScriptDir%\..\MacroOneForALL-master.zip
 	FileRemoveDir, %A_ScriptDir%\..\MacroOneForALL-master.zip
 	FileRemoveDir, %A_ScriptDir%\..\MacroOneForALL-master.zip, 1
-	sleep, 500
+	
 	PowerShell = Invoke-WebRequest '%packageURL%' -OutFile '%A_ScriptDir%\..\MacroOneForALL-master.zip'
 	RunWait, PowerShell %PowerShell%,, Hide
 	
@@ -66,10 +66,10 @@ Update:
 	}
 	Return
 
-compareVersions(RemoteVersion,CurrentVersion)
+compareVersions(remoteVersion,localVersion)
 {
-	StringSplit remoteArray, RemoteVersion, "."
-	StringSplit localArray, CurrentVersion, "."
+	StringSplit remoteArray, remoteVersion, "."
+	StringSplit localArray, localVersion, "."
 	match = 0
 	
 	Loop %remoteArray0%
