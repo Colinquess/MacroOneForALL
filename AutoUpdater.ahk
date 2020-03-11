@@ -15,7 +15,7 @@ VersionCheck:
 	URLDownloadToFile %versionURL%, CurrentVersion.txt
 	
 	FileRead, RemoteVersion, CurrentVersion.txt
-	RemoteVersion := RegExReplace(RemoteVersion,"`n")
+	
 	if (ErrorLevel = 1)
 	{
 		MsgBox Failed to retrieve latest version number from %versionURL%. Please check your network connection and try again.
@@ -66,10 +66,10 @@ Update:
 	}
 	Return
 
-compareVersions(remoteVersion,localVersion)
+compareVersions(RemoteVersion,CurrentVersion)
 {
-	StringSplit remoteArray, remoteVersion, "."
-	StringSplit localArray, localVersion, "."
+	StringSplit remoteArray, RemoteVersion, "."
+	StringSplit localArray, CurrentVersion, "."
 	match = 0
 	
 	Loop %remoteArray0%
