@@ -1,4 +1,4 @@
-ArchiveQNTArchives := "3"
+ArchiveQNTArchives := "2"
 
 ArchiveVersions := {FileName:[ArchiveQNTArchives],LocalVersion:[ArchiveQNTArchives],ItsLocal:[ArchiveQNTArchives]}
 
@@ -13,9 +13,3 @@ ArchiveVersions.ItsLocal.2 := A_ScriptDir
 
 ;#############Add new scripts below this line, NEVER EVER above it###########
 ;############# Remember that the base amount of scripts is 2, so you should ALLWAYS set the ArchiveQNTArchives to the value of added scrips +2 ########
-
-
-
-
-
-
