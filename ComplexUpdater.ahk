@@ -3,7 +3,7 @@
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 versionURL := "https://raw.githubusercontent.com/Colinquess/MacroOneForALL/master/CloudArchive.ahk"
-
+updates = 0
 
 ComplexUpdate:
 	updates = 0
