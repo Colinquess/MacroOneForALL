@@ -3,11 +3,11 @@ ArchiveQNTArchives := "2"
 ArchiveVersions := {FileName:[ArchiveQNTArchives],LocalVersion:[ArchiveQNTArchives],ItsLocal:[ArchiveQNTArchives]}
 
 ArchiveVersions.FileName[ArchiveQNTArchives] := "ArchiveVersions.ahk"
-ArchiveVersions.LocalVersion[ArchiveQNTArchives] := "2"
+ArchiveVersions.LocalVersion[ArchiveQNTArchives] := "3"
 ArchiveVersions.ItsLocal[ArchiveQNTArchives] := A_ScriptDir
 
 ArchiveVersions.FileName.1 := "ComplexUpdater.ahk"
-ArchiveVersions.LocalVersion.1 := "2"
+ArchiveVersions.LocalVersion.1 := "3"
 ArchiveVersions.ItsLocal.1 := A_ScriptDir
 
 
